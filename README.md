@@ -56,8 +56,8 @@ Wir programmieren ein Programm, das Sparziele aus Ein- und Ausnahmen errechnen k
 | 3.3 | Der Dateipfad wurde eingegeben | Dateipfad | Bestätigung dass der Pfad richtig oder dass er falsch ist.|
 
 ### 1.4 Diagramme
-![Screenshot_2022-10-24_141302](https://user-images.githubusercontent.com/111043950/204285685-e0240edc-6d7f-4c94-bc9e-2f3ad64dbba3.png)
 
+![image](https://user-images.githubusercontent.com/111043950/204298448-34582752-9293-4e8c-a07c-d61829918ca7.png)
 
 
 ## 2 Planen
