@@ -70,12 +70,12 @@ Arbeitspakete
 | 2. | Es sollte zwischen Einnahme und Ausgabe unterschieden werden können             |   2           |
 | 3. | Der Betrag sollte bei Eingabe/Ausgabe richtig eingespeichert werden             |     4          |
 | 4. | Die Beträge aus Eingabe und Ausgabe sollten korrekt miteinander verrechnet werden             |      3         |
-| 5. | Der Betrag der Gespart werden möchte sollte korrekt erfasst werden             |  3           |
+| 5. | Der Betrag der Gespart werden möchte sollte korrekt erfasst werden             |  1           |
 | 6. | Der Betrag der Eingabe und Ausgabe sollten korrekt mit dem Sparziel verrechnet werden und es sollte eine logische Sparzeit ausgegeben werden   |      4       |
 | 7. | Es sollte errechnet werden ob das Ziel überhaupt Sinn ergibt(z.B. falls über 10 Jahre Nachricht dass es zu lange ist)         |     1        |
 | 8. |   Der Code sollte ohne Fehler laufen und die Benutzung ist angenehm gestaltet           |     10         |
 
-Total: 
+Total: 63 (unter Abzug durch Abwesenheiten)
 
 
 
