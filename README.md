@@ -1,7 +1,6 @@
 # Finanzassistent
 
-Ihr habt alle viel zu lange auf dem Sofa masturbiert, wir haben polarisiert!
-~LX!
+
 
 
 | Nr.   | "Titel"      | Zuständige Person  | Beschreibung |
