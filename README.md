@@ -5,24 +5,14 @@
 
 | Nr.   | "Titel"      | Zuständige Person  | Beschreibung |
 | ----- |--------------|------------------ | ------------ |
-| 1.     | Datei Einlesen |  Ben & Joël                | Das Programm sollte die Abgespeicherte Datei einlesen um fals weitere Eingaben dazu kommen, diese mit den schon gegebenen Eingeabe zu verrechen | Ben & Joël, Jan
-| 2.     | Zahlen verrechnen|     Gian              | Das Programm sollte die Geldsummen von Einnahme und Ausgabe miteinander verrechnen um später dann die Sparzeit auszurechnen. | Jan
-| 3.| Ausgabe der Zahlen|   Jan      Jan           | Es sollte ausgegeben werden wie lang man auf das Sparziel sparen müsste um es zu erreichen und vieleicht auch schauen ob es Sinn ergibts so zu sparen. |
+| 1.     | Datei Einlesen |  Ben & Joël                |
+|2.|Das Programm sollte die Abgespeicherte Datei einlesen um falls weitere Eingaben dazu kommen, diese mit den schon gegebenen Eingaben zu verrechen | Ben & Joël, Jan|
+| 3.     | Zahlen verrechnen|     Gian              | 
+|4. |Das Programm sollte die Geldsummen von Einnahme und Ausgabe miteinander verrechnen um später dann die Sparzeit auszurechnen. | Jan|
+| 5.| Ausgabe der Zahlen|   Jan       | 
+|6. |Es sollte ausgegeben werden wie lang man auf das Sparziel sparen müsste um es zu erreichen und vieleicht auch schauen ob es Sinn ergibts so zu sparen. |Joël|
 
 
-
-Arbeitspakete
-
-| Nr.| Beschreibung | Geplante Zeit |
-|----|--------------|---------------|
-| 1. | Datei Sollte eingelesen werden können |    5          |
-| 2. | Es sollte zwischen Einnahme und Ausgabe entschieden werden können             |   2           |
-| 3. | Der Betrag sollte bei Eingabe/Ausahme richtig eingespeichert werden             |     4          |
-| 4. | Die Beträge aus Eingabe und Ausgabe sollten korrekt miteinander verrechnet werden.             |      3         |
-| 5. | Der Betrag der Gespahrt werden möchte sollte korrekt erfasst werden             |  3           |
-| 6. | Der Betag der Eingabe und Ausgabe sollten korrekt mit dem Sparziel verrechnet werden und es sollte eine korrekte Spaarzeit ausgegeben werden.             |      4       |
-| 7. | Es sollte errechnet werden ob das Ziel überhaupt Sinn ergibt(z.B. falls über 10 Jahre Nachricht dass es zu lange ist.)         |     1        |
-| 8. |   Der Code sollte ohne Fehler laufen und die Benutzung ist angenehm gestaltet           |     10         |
 
 
 # Projekt-Dokumentation
@@ -72,16 +62,23 @@ Wir programmieren ein Programm, das Sparziele aus Ein- und Ausnahmen errechnen k
 
 ## 2 Planen
 
-| AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
-| ---- | ----- | --------- | ------------ | ------------- |
-| 1.A  |       |           |              |               |
-| ...  |       |           |              |               |
+Arbeitspakete
+
+| Nr.| Beschreibung | Geplante Zeit |
+|----|--------------|---------------|
+| 1. | Datei sollte eingelesen werden können |    5          |
+| 2. | Es sollte zwischen Einnahme und Ausgabe unterschieden werden können             |   2           |
+| 3. | Der Betrag sollte bei Eingabe/Ausgabe richtig eingespeichert werden             |     4          |
+| 4. | Die Beträge aus Eingabe und Ausgabe sollten korrekt miteinander verrechnet werden             |      3         |
+| 5. | Der Betrag der Gespart werden möchte sollte korrekt erfasst werden             |  3           |
+| 6. | Der Betrag der Eingabe und Ausgabe sollten korrekt mit dem Sparziel verrechnet werden und es sollte eine logische Sparzeit ausgegeben werden   |      4       |
+| 7. | Es sollte errechnet werden ob das Ziel überhaupt Sinn ergibt(z.B. falls über 10 Jahre Nachricht dass es zu lange ist)         |     1        |
+| 8. |   Der Code sollte ohne Fehler laufen und die Benutzung ist angenehm gestaltet           |     10         |
 
 Total: 
 
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, auf die sich das Arbeitspaket bezieht, und `m` von `A` an nach oben buchstabiert. Beispiel: Das dritte Arbeitspaket, das die zweite User Story betrifft, hat also die Nummer `2.C`.
 
-✍️ Ein Arbeitspaket sollte etwa 45' für eine Person in Anspruch nehmen. Die totale Anzahl Arbeitspakete sollte etwa Folgendem entsprechen: `Anzahl R-Sitzungen` ╳ `Anzahl Gruppenmitglieder` ╳ `4`. Wenn Sie also zu dritt an einem Projekt arbeiten, für welches zwei R-Sitzungen geplant sind, sollten Sie auf `2` ╳ `3` ╳`4` = `24` Arbeitspakete kommen. Sollten Sie merken, dass Sie hier nicht genügend Arbeitspakte haben, denken Sie sich weitere "Kann"-User Stories für Kapitel 1.2 aus.
+
 
 ## 3 Entscheiden
 
@@ -91,12 +88,17 @@ Total:
 
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
-| 1.A  |       |           |               |                   |
-| ...  |       |           |               |                   |
+| 1.A  |  24.10     |   Ben & Joël        |  5             |        6           |
+|2.A |   31.10    |    Jan       |     2          |    3               |
+|3.A| 07.11| Ben & Joël |4|4-5|
+|4.A|14.11| Gian|3|3|
+|5.A|14.11|Jan|3|3|
+|6.A|21.11| Jan |4|4|
+|7.A|21.11|Gian|1|1|
+|8.A|28.11|Ben, Joël, Jan, Gian|10|15-18|
 
-✍️ Tragen Sie jedes Mal, wenn Sie ein Arbeitspaket abschließen, hier ein, wie lang Sie effektiv dafür hatten.
 
-## 5 Kontrollieren
+# 5 Kontrollieren
 
 ### 5.1 Testprotokoll
 
