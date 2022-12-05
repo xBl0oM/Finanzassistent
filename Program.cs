@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,6 +27,7 @@ namespace TestVersion1
             string Antwort = "0";
             bool vermerkungsSchleife = false;
             bool schleife1 = false;
+            int Rechnung = 0;
 
 
 
@@ -37,7 +38,7 @@ namespace TestVersion1
 
 
             List<int> EinnahmenListe = new List<int>();
-            
+
             bool exception = false;
 
 
@@ -132,7 +133,7 @@ namespace TestVersion1
 
 
             //Ausgaben Pfad
-            while (ausgabenPfad1 =="")
+            while (ausgabenPfad1 == "")
 
             {
                 Console.WriteLine("Haben sie schon eine Datei mit ihren Ausgaben ? [J/N]");
@@ -142,7 +143,7 @@ namespace TestVersion1
                     switch (key5)
                     {
                         case 'j':
-                            dateiBVorhanden = true;                          
+                            dateiBVorhanden = true;
                             break;
                         case 'n':
                             dateiBVorhanden = false;
@@ -221,7 +222,7 @@ namespace TestVersion1
             while (!dateiPfad1Korrekt)
             {
 
-                Console.WriteLine("Ist der Dateipfad " + einnahmenPfad1 + " und "+ ausgabenPfad1+ " korrekt ? [J/N]");
+                Console.WriteLine("Ist der Dateipfad " + einnahmenPfad1 + " und " + ausgabenPfad1 + " korrekt ? [J/N]");
                 char key3 = Console.ReadKey().KeyChar;
                 while (korrekt == null)
                 {
@@ -285,8 +286,8 @@ namespace TestVersion1
                     string Dat1text = Properties.Settings.Default.Einnahmen;
                     Console.ReadLine();
                     Dat1text = File.ReadAllText(@einnahmenPfad1);
-                    string Dat2text = File.ReadAllText(ausgabenPfad1);                    
-                    string[] Linien1 = Dat1text.Split('\n');                   
+                    string Dat2text = File.ReadAllText(ausgabenPfad1);
+                    string[] Linien1 = Dat1text.Split('\n');
                     string[] Linien2 = Dat2text.Split('\n');
                     string Menge;
                     string[] Wörter1;
@@ -343,19 +344,22 @@ namespace TestVersion1
                                 }
 
                             }
-
+                            
                             if (Antwort == "Einnahme")
                             {
                                 Console.WriteLine("Menge:");
-                                Menge = Dat1text + Console.ReadLine();
+                                Rechnung = Convert.ToInt32(Console.ReadLine());
+                                Menge = Convert.ToString(Dat1text +'\n'+ Rechnung);
                                 File.WriteAllText(einnahmenPfad, Menge);
-                                // items = Linien1[10000].Split(',');
-                                //Console.WriteLine(items[0]);
+                                
                             }
                             else if (Antwort == "Ausgabe")
                             {
-                                Console.WriteLine("");
-                                Console.WriteLine("2");
+                                Console.WriteLine("Menge:");
+                                Rechnung = Convert.ToInt32(Console.ReadLine());
+                                Menge = Convert.ToString(Dat2text + '\n' + Rechnung);
+                                File.WriteAllText(ausgabenPfad, Menge);
+                                Rechnung = Rechnung - 2 * Rechnung;
                             }
                             else
                             {
@@ -367,7 +371,8 @@ namespace TestVersion1
                                 Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
 
                             }
-                        } else if (vermerkungAntwort == false)
+                        }
+                        else if (vermerkungAntwort == false)
                         {
                             Console.WriteLine("Schade");
                         }
@@ -382,14 +387,14 @@ namespace TestVersion1
 
                     for (int i = 0; i <= Zeilennummer1 - 1; i++)
                     {
-                        Einnahmen2 = Einnahmen2 + Convert.ToInt32(Linien1[i]);
+                        Einnahmen2 = Einnahmen2 + Convert.ToInt32(Linien1[i]) + Rechnung;
 
                     }
                     //Console.WriteLine(Einnahmen);
 
                     for (int j = 0; j <= Zeilennummer2 - 1; j++)
                     {
-                        Ausgaben2 = Ausgaben2 + Convert.ToInt32(Linien2[j]);
+                        Ausgaben2 = Ausgaben2 + Convert.ToInt32(Linien2[j]) + Rechnung;
 
                     }
                     //Console.WriteLine(Ausgaben);
@@ -424,7 +429,7 @@ namespace TestVersion1
                             }
                         } while (TryCatch == false);
 
-                        if (Verdienst < 0)
+                        if (Verdienst <= 0)
                         {
                             Console.WriteLine("Da Sie monatlich kein Geld verdienen macht es keinen Sinn zu Spaaren");
 
@@ -432,29 +437,28 @@ namespace TestVersion1
 
                         int Sparzeit = Sparziel / Verdienst;
                         int Jahre = 0;
-                        int Gschanmargo69 = Sparzeit;
                         if (Sparzeit > 48)
                         {
                             Jahre = Sparzeit / 12;
                         }
-                        
-                        if (Jahre > 25)
+
+                        if (Jahre > 50)
                         {
                             Console.WriteLine("Sie wollen " + Jahre + " Jahre sparen was ziemlich lange ist, vielleicht sollten Sie sich ein realistischeres Ziel setzen.");
                             B = true;
                         }
-                        else if (Gschanmargo69 > 48)
+                        else if (Sparzeit > 24)
                         {
                             Console.WriteLine("Sie werden " + Jahre + " Jahre brauchen um das Ziel zu erreichen");
                             B = false;
                         }
                         else
                         {
-                            Console.WriteLine("Sie werden " + Gschanmargo69 + 1 + " Monate brauchen um das Ziel zu erreichen");
+                            Console.WriteLine("Sie werden " + Sparzeit + 1 + " Monate brauchen um das Ziel zu erreichen");
                             B = false;
                         }
                     } while (B);
-                    
+
 
                 }
             }
